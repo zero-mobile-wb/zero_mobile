@@ -68,13 +68,21 @@ function App() {
 
           {/* Right side: desktop CTA + mobile hamburger */}
           <div className="flex items-center justify-end flex-1 gap-3">
-            {/* Desktop Join Waitlist */}
+            {/* Desktop Action Buttons */}
             <button
               onClick={() => { setIsWaitlistOpen(true); setIsFormLoading(true) }}
               className="hidden md:block px-6 py-2.5 bg-[#2b2b2b] text-white rounded-full text-sm font-semibold hover:bg-black transition-all shadow-[0_4px_14px_0_rgba(0,0,0,0.1)]"
             >
               Join waitlist
             </button>
+            <a
+              href="https://zeromobile-psi.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`hidden md:flex items-center px-6 py-2.5 rounded-full text-sm font-semibold transition-all shadow-[0_4px_14px_0_rgba(0,0,0,0.05)] ${isDarkTheme ? 'bg-white text-black hover:bg-gray-200' : 'bg-white border border-gray-200 text-gray-900 hover:bg-gray-50'}`}
+            >
+              Launch App
+            </a>
 
             {/* Mobile Hamburger */}
             <button
@@ -97,13 +105,21 @@ function App() {
             <button className={`text-left text-lg font-semibold py-2 transition-colors ${isDarkTheme ? 'text-gray-300 hover:text-white' : 'text-gray-700 hover:text-black'}`} onClick={() => setIsMenuOpen(false)}>Personal</button>
             <button className={`text-left text-lg font-semibold py-2 transition-colors ${isDarkTheme ? 'text-gray-300 hover:text-white' : 'text-gray-700 hover:text-black'}`} onClick={() => setIsMenuOpen(false)}>Business</button>
             <button className={`text-left text-lg font-semibold py-2 transition-colors ${isDarkTheme ? 'text-gray-300 hover:text-white' : 'text-gray-700 hover:text-black'}`} onClick={() => setIsMenuOpen(false)}>About us</button>
-            <div className="pt-2">
+            <div className="pt-2 flex flex-col gap-3">
               <button
                 onClick={() => { setIsWaitlistOpen(true); setIsFormLoading(true); setIsMenuOpen(false) }}
                 className="w-full py-3.5 bg-[#2b2b2b] text-white rounded-2xl text-base font-bold hover:bg-black transition-all"
               >
                 Join waitlist
               </button>
+              <a
+                href="https://zeromobile-psi.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`w-full py-3.5 flex items-center justify-center rounded-2xl text-base font-bold transition-all ${isDarkTheme ? 'bg-white text-black hover:bg-gray-200' : 'bg-gray-100 text-gray-900 hover:bg-gray-200'}`}
+              >
+                Launch App
+              </a>
             </div>
           </div>
         )}
@@ -176,12 +192,23 @@ function App() {
           <p className="text-gray-500 text-base md:text-xl font-medium mb-6 md:mb-8 max-w-lg text-left leading-relaxed">
             Experience a new affordable and efficient way to send and receive digital payments worldwide.
           </p>
-          <button
-            onClick={scrollToBottom}
-            className="px-8 py-4 bg-[#2b2b2b] text-white rounded-full text-base md:text-lg font-bold hover:bg-black transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5"
-          >
-            Get Zero today
-          </button>
+          <div className="flex flex-wrap items-center gap-4">
+            <button
+              onClick={scrollToBottom}
+              className="px-8 py-4 bg-[#2b2b2b] text-white rounded-full text-base md:text-lg font-bold hover:bg-black transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5"
+            >
+              Get Zero today
+            </button>
+            <a
+              href="https://zeromobile-psi.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-4 flex items-center gap-2 bg-transparent border-2 border-[#2b2b2b] text-[#2b2b2b] rounded-full text-base md:text-lg font-bold hover:bg-gray-50 transition-all shadow-md hover:shadow-xl hover:-translate-y-0.5"
+            >
+              Launch App
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+            </a>
+          </div>
         </div>
       </section>
 
@@ -382,13 +409,24 @@ function App() {
               A new era of borderless, instant, affordable payments — built for the world.
             </p>
 
-            {/* Join Waitlist Button */}
-            <button
-              onClick={() => { setIsWaitlistOpen(true); setIsFormLoading(true) }}
-              className={`mt-8 self-start px-8 py-4 text-base md:text-lg font-bold rounded-full transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 font-sans ${isDarkTheme ? 'bg-white text-black hover:bg-gray-100' : 'bg-[#2b2b2b] text-white hover:bg-black'}`}
-            >
-              Join the waitlist →
-            </button>
+            {/* Action Buttons */}
+            <div className="mt-8 flex flex-wrap items-center gap-4">
+              <button
+                onClick={() => { setIsWaitlistOpen(true); setIsFormLoading(true) }}
+                className={`px-8 py-4 text-base md:text-lg font-bold rounded-full transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 font-sans flex-shrink-0 ${isDarkTheme ? 'bg-white text-black hover:bg-gray-100' : 'bg-[#2b2b2b] text-white hover:bg-black'}`}
+              >
+                Join the waitlist →
+              </button>
+              <a
+                href="https://zeromobile-psi.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`px-8 py-4 flex items-center gap-2 text-base md:text-lg font-bold rounded-full transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 font-sans border-2 flex-shrink-0 ${isDarkTheme ? 'border-white text-white hover:bg-white/10' : 'border-[#2b2b2b] text-[#2b2b2b] hover:bg-gray-50'}`}
+              >
+                Launch App
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+              </a>
+            </div>
           </div>
 
           {/* Right: Mobile3 Image */}
