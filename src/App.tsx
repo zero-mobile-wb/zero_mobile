@@ -76,7 +76,7 @@ function App() {
               Join waitlist
             </button>
             <a
-              href="https://zeromobile-psi.vercel.app/"
+              href="https://app.zeromobile.site/"
               target="_blank"
               rel="noopener noreferrer"
               className={`hidden md:flex items-center px-6 py-2.5 rounded-full text-sm font-semibold transition-all shadow-[0_4px_14px_0_rgba(0,0,0,0.05)] ${isDarkTheme ? 'bg-white text-black hover:bg-gray-200' : 'bg-white border border-gray-200 text-gray-900 hover:bg-gray-50'}`}
@@ -113,7 +113,7 @@ function App() {
                 Join waitlist
               </button>
               <a
-                href="https://zeromobile-psi.vercel.app/"
+                href="https://app.zeromobile.site/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`w-full py-3.5 flex items-center justify-center rounded-2xl text-base font-bold transition-all ${isDarkTheme ? 'bg-white text-black hover:bg-gray-200' : 'bg-gray-100 text-gray-900 hover:bg-gray-200'}`}
