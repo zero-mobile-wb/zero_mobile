@@ -1,73 +1,27 @@
-# React + TypeScript + Vite
+# Zero Mobile
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Zero** is a next-generation digital wallet built on Solana, designed to redefine global payments and bring financial control back to the user. 
 
-Currently, two official plugins are available:
+## The Vision
+Bringing financing to the 1.5 billion unbanked globally by enabling cost-efficient, instant, and borderless digital payments. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Key Value Propositions
+- **Borderless & Instant:** Frictionless global transfers powered by Solana's high-speed, low-cost architecture.
+- **True Self-Custody:** Non-custodial infrastructure ensuring users have total control of their funds. "Your keys, your crypto."
+- **Seamless On/Off-Ramps:** Built-in spending and direct conversions, bridging the gap between fiat and digital assets effortlessly.
+- **Zero Alpha Point Program:** An integrated rewards mechanism that incentivizes user transactions and drives retention.
 
-## React Compiler
+## Why Zero?
+Zero isn't just another wallet; it is engineered to be the *only* payments app a user will ever need. By combining the security of self-custody with the UX of a modern fintech application, Zero eliminates the high fees and friction points associated with traditional remittance and cross-border payments.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Traction & Backers
+Zero is actively building in the Solana ecosystem and backed by industry leaders, including:
+- **soonami.io**
+- **Legends**
+- **Fairscale**
 
-## Expanding the ESLint configuration
+## The Platform
+- **Web App:** [app.zeromobile.site](https://app.zeromobile.site/)
+- **Landing Page:** [zeromobile.site/](https://zeromobile.site/)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+*Experience a new era of borderless, instant, affordable payments — built for the world.*
